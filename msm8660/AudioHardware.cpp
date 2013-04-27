@@ -3178,8 +3178,13 @@ String8 AudioHardware::AudioStreamOutMSM8x60::getParameters(const String8& keys)
         ALOGV("get routing %x", mDevices);
         param.addInt(key, (int)mDevices);
     }
-
-    ALOGV("AudioStreamOutMSM8x60::getParameters() %s", param.toString().string());
+#ifdef KILLVOIPFLAG
+    if (param.toString().string() ==  "voip_flag=") {
+	}
+   else {
+	 ALOGV("AudioStreamOutMSM8x60::getParameters() %s", param.toString().string());
+	}
+#endif
     return param.toString();
 }
 

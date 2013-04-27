@@ -108,7 +108,7 @@ class AudioHardwareALSA;
 
 #define DUALMIC_KEY         "dualmic_enabled"
 #define FLUENCE_KEY         "fluence"
-#define VOIPCHECK_KEY         "voip_flag"
+#define VOIPCHECK_KEY       "voip_flag"
 #define ANC_KEY             "anc_enabled"
 #define TTY_MODE_KEY        "tty_mode"
 #define BT_SAMPLERATE_KEY   "bt_samplerate"
